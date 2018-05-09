@@ -24,10 +24,11 @@ include_directories( ${G2O_INCLUDE_DIRS} )
 
 set( THIRD_PARTY_LIBS 
     ${OpenCV_LIBS}
-    ${Sophus_LIBRARIES}
+    Sophus
     g2o_core g2o_stuff g2o_types_sba
 )
-############### source and test ######################
+#${Sophus_LIBRARIES}
+############### dependencies ######################
 include_directories( ${PROJECT_SOURCE_DIR}/include )
 add_subdirectory( src )
 add_subdirectory( test )
